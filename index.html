@@ -1,0 +1,219 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Personal Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .slide-in {
+            animation: slideIn 1s ease-in-out;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #1f2937;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100 font-roboto">
+  <div class="container mx-auto p-4 mt-20">
+   <div class="bg-gray-800 shadow-md rounded-lg p-6 fade-in">
+    <div class="flex flex-col md:flex-row items-center mb-8">
+     <img alt="Profile picture of Sandro Alves" class="rounded-full w-32 h-32 md:w-48 md:h-48 mb-4 md:mb-0 mr-0 md:mr-6" src="logo.png"/>
+     <div class="text-center md:text-left">
+      <h1 class="text-3xl font-bold mb-2 text-blue-300">
+       Hello, I'm Sandro Alves
+      </h1>
+      <h3 class="mb-4">
+       I'm a student and I like working with programming...
+      </h3>
+      <ul class="list-none">
+       <li>
+        <p>
+         🌱 I’m currently learning
+         <strong>
+          Databases (SQL) and Backend/Frontend (PHP, Javascript)
+         </strong>
+        </p>
+       </li>
+       <li>
+        <p>
+         💬 Ask me about
+         <strong>
+          Linux, C/C++, AI, Data Science
+         </strong>
+        </p>
+       </li>
+       <li>
+        <p>
+         📫 How to reach me
+         <strong>
+          sxp.oficial1234@gmail.com
+         </strong>
+        </p>
+       </li>
+       <li>
+        <p>
+         ⚡ Fun fact
+         <strong>
+          I use Arch (btw) ;)
+         </strong>
+        </p>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <h3 class="text-center mt-6 text-xl font-bold text-blue-300">
+     Languages and Tools:
+    </h3>
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mt-4">
+     <a href="https://www.cprogramming.com/" rel="noreferrer" target="_blank">
+      <img alt="C programming language logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"/>
+     </a>
+     <a href="https://www.w3schools.com/cpp/" rel="noreferrer" target="_blank">
+      <img alt="C++ programming language logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"/>
+     </a>
+     <a href="https://www.w3schools.com/cs/" rel="noreferrer" target="_blank">
+      <img alt="C# programming language logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"/>
+     </a>
+     <a href="https://www.w3schools.com/css/" rel="noreferrer" target="_blank">
+      <img alt="CSS3 logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+     </a>
+     <a href="https://git-scm.com/" rel="noreferrer" target="_blank">
+      <img alt="Git version control logo" class="w-12 h-12 mx-auto" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"/>
+     </a>
+     <a href="https://www.w3.org/html/" rel="noreferrer" target="_blank">
+      <img alt="HTML5 logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+     </a>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="noreferrer" target="_blank">
+      <img alt="JavaScript logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+     </a>
+     <a href="https://www.linux.org/" rel="noreferrer" target="_blank">
+      <img alt="Linux logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"/>
+     </a>
+     <a href="https://mariadb.org/" rel="noreferrer" target="_blank">
+      <img alt="MariaDB logo" class="w-12 h-12 mx-auto" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg"/>
+     </a>
+     <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
+      <img alt="MySQL logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+     </a>
+     <a href="https://nodejs.org" rel="noreferrer" target="_blank">
+      <img alt="Node.js logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"/>
+     </a>
+     <a href="https://www.php.net" rel="noreferrer" target="_blank">
+      <img alt="PHP logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+     </a>
+     <a href="https://www.python.org" rel="noreferrer" target="_blank">
+      <img alt="Python logo" class="w-12 h-12 mx-auto" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"/>
+     </a>
+     <a href="https://unity.com/" rel="noreferrer" target="_blank">
+      <img alt="Unity logo" class="w-12 h-12 mx-auto" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"/>
+     </a>
+    </div>
+   </div>
+   <br/>
+   <br/>
+   <h2 class="text-2xl font-bold mb-4 text-blue-400 slide-in">
+    Projects
+   </h2>
+   <div class="w-full">
+    <div class="bg-gray-700 p-4 rounded-lg mb-4 hover:bg-gray-600 transition duration-300 slide-in cursor-pointer" id="vortexos-project">
+     <h3 class="text-xl font-bold text-blue-500">
+      VortexOS
+     </h3>
+     <p class="text-gray-300">
+      VortexOS is a Linux operating system, with a focus on performance and customization...
+     </p>
+    </div>
+    <div class="bg-gray-700 p-4 rounded-lg mb-4 hover:bg-gray-600 transition duration-300 slide-in">
+     <h3 class="text-xl font-bold text-blue-500">
+      Dotfiles
+     </h3>
+     <p class="text-gray-300">
+      Dotfiles is a collection of configuration files that I use to customize my Linux system.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="modal" id="vortexos-modal">
+   <div class="modal-content">
+    <span class="close" id="close-modal">
+     ×
+    </span>
+    <h2 class="text-2xl font-bold mb-4 text-blue-400">
+     Coming Soon
+    </h2>
+    <p class="text-white">
+     Under initial development... Stay tuned for updates!
+    </p>
+   </div>
+  </div>
+  <script>
+   document.getElementById('vortexos-project').onclick = function() {
+        document.getElementById('vortexos-modal').style.display = "block";
+    }
+    document.getElementById('close-modal').onclick = function() {
+        document.getElementById('vortexos-modal').style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('vortexos-modal')) {
+            document.getElementById('vortexos-modal').style.display = "none";
+        }
+    }
+  </script>
+ </body>
+</html>
