@@ -171,12 +171,12 @@
     Projects
    </h2>
    <div class="w-full">
-    <div class="bg-gray-700 p-4 rounded-lg mb-4 hover:bg-gray-600 transition duration-300 slide-in cursor-pointer" id="vortexos-project">
+    <div class="bg-gray-700 p-4 rounded-lg mb-4 hover:bg-gray-600 transition duration-300 slide-in cursor-pointer" id="vortex-project">
      <h3 class="text-xl font-bold text-blue-500">
-      VortexOS
+      Vortexia
      </h3>
      <p class="text-gray-300">
-      VortexOS is a Linux operating system, with a focus on performance and customization...
+      Vortexia is a startup project that aims to explore new technologies for research purposes, encouraging community collaboration for our projects.
      </p>
     </div>
     <a href="https://github.com/sandroXP2022/dotfiles">
@@ -191,7 +191,7 @@
     </a>
    </div>
   </div>
-  <div class="modal" id="vortexos-modal">
+  <div class="modal" id="vortex-modal">
    <div class="modal-content">
     <span class="close" id="close-modal">
      ×
@@ -205,15 +205,15 @@
    </div>
   </div>
   <script>
-   document.getElementById('vortexos-project').onclick = function() {
-        document.getElementById('vortexos-modal').style.display = "block";
+   document.getElementById('vortex-project').onclick = function() {
+        document.getElementById('vortex-modal').style.display = "block";
     }
     document.getElementById('close-modal').onclick = function() {
-        document.getElementById('vortexos-modal').style.display = "none";
+        document.getElementById('vortex-modal').style.display = "none";
     }
     window.onclick = function(event) {
         if (event.target == document.getElementById('vortexos-modal')) {
-            document.getElementById('vortexos-modal').style.display = "none";
+            document.getElementById('vortex-modal').style.display = "none";
         }
     }
   </script>
